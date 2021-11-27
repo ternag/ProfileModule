@@ -1,6 +1,6 @@
-Set-Alias -Name ll -Value Get-ChildItemLl
-Set-Alias -Name la -Value Get-ChildItemLa
-Set-Alias -Name sts -Value Start-TestShell
+New-Alias -Name ll -Value Get-ChildItemLl
+New-Alias -Name la -Value Get-ChildItemLa
+New-Alias -Name sts -Value Start-TestShell
 
 function Get-ChildItemLl { param ([String]$path = ".") Get-ChildItem -Path $path -Exclude .* }
 function Get-ChildItemLa { param ([String]$path = ".") Get-ChildItem -Path $path -Force}
